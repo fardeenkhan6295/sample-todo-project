@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('deploy to remote'){
             steps{
-                sh 'scp -r ${WORKSPACE}/* root@172.31.132.97:/var/www/html/fardeen/'
+                sh 'scp -r ${WORKSPACE}/* root@172.31.132.192:/var/www/html/fardeen/'
             }
         }
     }
